@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.macbookpro.trial1.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/weatherbackground"
+        android:layout_marginTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/skybg"
+        />
+
+    <TextView
+        android:id="@+id/temperature"
+        android:orientation="horizontal"
+        android:layout_width="200dp"
+        android:maxLines="2"
+        android:textSize="50sp"
+        android:layout_height="60dp"
+        android:layout_marginTop="0dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="visible"
+        android:text="@string/app_name"
+        android:textColor="@android:color/holo_red_dark"
+        />
+
+    <TextView
+        android:id="@+id/description"
+        android:orientation="horizontal"
+        android:layout_width="200dp"
+        android:maxLines="2"
+        android:textSize="50sp"
+        android:layout_height="60dp"
+        android:layout_marginTop="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="visible"
+        android:text="@string/app_name"
+        android:textColor="@android:color/holo_red_dark"
+        />
+
+
+</android.support.design.widget.CoordinatorLayout>
